@@ -1,0 +1,40 @@
+ body {
+    background-color: #7E5841; background-image: linear-gradient(#2c1c20, #3E2825, #7E5841);
+    background-repeat: no-repeat; background-attachment: fixed;
+    color: antiquewhite; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4 {font-family: 'Libre Baskerville', serif;}
+
+.border-title {                
+    border-left: 15px rgba(255,255,255,0.3) solid !important;
+}
+
+.bg-transparent-1 {
+    background-color: rgba(0,0,0,0.3) !important;
+}
+
+.bg-transparent-2 {
+    background-color: rgba(0,0,0,0.6) !important;
+}
+
+.card {
+    border: none; background-color: transparent;
+}
+
+.bgdImg {
+    width: 100%; height: auto; z-index: -1; max-height: 100vh;
+    position: fixed; top: 0px; left:0px; opacity: 0.5;
+}
+.logoImg {
+    max-width: 120px; max-height: 120px;
+    width:20%; height: 20%;
+}
