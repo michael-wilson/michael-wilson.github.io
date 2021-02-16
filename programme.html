@@ -52,9 +52,6 @@
         <link type="text/css" href="style/style.css" rel="stylesheet">
         
         <style type="text/css">
-        .timezones {
-            display: none;
-        }
         </style>
 
     </head>
@@ -106,9 +103,9 @@
                 
                     <h4 class="mb-4">Provisional Programme</h4>
                     <div class="ml-3">
-                        <p>The planned schedule for May 2021. <a class="timezoneshow">Pick a Timezone</a></p>
+                        <p>The planned schedule for May 2021. Pick a Timezone</p>
                         <div class="timezones"></div>
-                        <h5>All sessions on <a class='testclick'>Zoom</a>></h5>
+                        <h5>All sessions on Zoom</h5>
                         <table class="table table-dark table-striped table-sm mb-3">
                             <thead>
                                 <th colspan="3" class="text-warning">Day 1 - Monday May 24<sup>th</sup> 2021</th>
@@ -459,13 +456,10 @@
                     //$( this ).text(tzt);
                 });
             });
-            $(".timezoneshow" ).on("click", function( event ) {
-                console.log(event);
-                $('.timezones').show();
-            });
+
             
             $('.timezones').timezonePicker();
-            $('.timezones').on("map:country:clicked" , function(){
+            $('.timezones').on("map:country:clicked", function(){
                 console.log($('.timezones').data('timezonePicker').getValue());
             });
             $('.timezones').on("map:quickLink:clicked" , function(){
