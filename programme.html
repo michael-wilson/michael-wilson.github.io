@@ -93,7 +93,7 @@
                     <h4 class="mb-4">Provisional Programme</h4>
                     <div class="ml-3">
                         <p>The planned schedule for May 2021. <select class="selectpicker countrypicker" data-flag="true" multiple></select></p>
-                        <h5>All sessions on Zoom</h5>
+                        <h5>All sessions on <a class='testclick'>Zoom</a>></h5>
                         <table class="table table-dark table-striped table-sm mb-3">
                             <thead>
                                 <th colspan="3" class="text-warning">Day 1 - Monday May 24<sup>th</sup> 2021</th>
@@ -434,10 +434,12 @@
         </div>
         
         <script>
-            // present in BST in time element, store value as UTC, correct with javascript from UTC
-            // we want CET
-            // on dropdown change get country and then moment the timezones
-
+            $(".testclick" ).on("click", function( event ) {
+                console.log(event);
+                $( "time" ).each(function( index ) {
+                    console.log( index + ": " + $( this ).attr("datetime") );
+                });
+            });
             $(".countrypicker" ).on("change", function( event ) {
                 console.log(event);
                 $( "time" ).each(function( index ) {
