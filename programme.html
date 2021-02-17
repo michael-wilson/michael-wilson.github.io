@@ -245,8 +245,9 @@
                                 <th colspan="3" class="text-warning">Day 1 - Monday May 24<sup>th</sup> 2021</th>
                             </thead>
                            <tr>
-                            <td width="15%" class="subhead timezone"><strong>Etc/UTC</strong></td>
-                            <td colspan="2" class="subhead"><strong>Content</strong></td>
+                            <td class="subhead timezone">Etc/UTC</td>
+                            <td class="subhead">Content</td>
+                            <td></td>
                            </tr>
                            <tr>
                             <td><time datetime="2021-05-24T14:30:00Z">14:30</time></td>
@@ -307,8 +308,9 @@
                                 <th colspan="3" class="text-warning">Day 2 - Tuesday May 25<sup>th</sup> 2021</th>
                             </thead>
                            <tr>
-                            <td width="15%" class="subhead timezone"><strong>Etc/UTC</strong></td>
-                            <td colspan="2" class="subhead">Content</td>
+                            <td class="subhead timezone"><strong>Etc/UTC</strong></td>
+                            <td class="subhead">Content</td>
+                            <td></td>
                            </tr>
                            <tr>
                             <td></td>
@@ -344,7 +346,7 @@
                            </tr>
                            <tr>
                             <td></td>
-                            <td colspan=2>Concurrent Sessions</td>
+                            <td class="concurrentSession" colspan=2>Concurrent Sessions</td>
                            </tr>
                            <tr>
                             <td></td>
@@ -393,7 +395,7 @@
                            </tr>
                            <tr>
                             <td></td>
-                            <td colspan=2>Concurrent Sessions</td>
+                            <td class="concurrentSession" colspan=2>Concurrent Sessions</td>
                            </tr>
                            <tr>
                             <td></td>
@@ -439,8 +441,9 @@
                                 <th colspan="3" class="text-warning">Day 3 - Wednesday May 26<sup>th</sup> 2021</th>
                             </thead>
                            <tr>
-                            <td width="15%" class="subhead timezone"><strong>Etc/UTC</strong></td>
-                            <td colspan="2" class="subhead">Content</td>
+                            <td class="subhead timezone"><strong>Etc/UTC</strong></td>
+                            <td class="subhead">Content</td>
+                            <td></td>
                            </tr>
                            <tr>
                             <td></td>
@@ -478,7 +481,7 @@
                            </tr>
                            <tr>
                             <td></td>
-                            <td colspan=2>Concurrent Sessions</td>
+                            <td class="concurrentSession" colspan=2>Concurrent Sessions</td>
                            </tr>
                            <tr>
                             <td></td>
@@ -527,7 +530,7 @@
                            </tr>
                            <tr>
                             <td></td>
-                            <td colspan=2>Concurrent Sessions</td>
+                            <td class="concurrentSession" colspan=2>Concurrent Sessions</td>
                            </tr>
                            <tr>
                             <td></td>
@@ -573,8 +576,9 @@
                                 <th colspan="3" class="text-warning">Day 4 - Thursday May 27<sup>th</sup> 2021</th>
                             </thead>
                            <tr>
-                            <td width="15%" class="subhead timezone"><strong>Etc/UTC</strong></td>
-                            <td colspan="2" class="subhead">Content</td>
+                            <td class="subhead timezone"><strong>Etc/UTC</strong></td>
+                            <td class="subhead">Content</td>
+                            <td></td>
                            </tr>
                            <tr>
                             <td></td>
@@ -618,7 +622,7 @@
                            </tr>
                            <tr>
                             <td></td>
-                            <td colspan=2>Concurrent Sessions</td>
+                            <td class="concurrentSession" colspan=2>Concurrent Sessions</td>
                            </tr>
                            <tr>
                             <td></td>
@@ -667,7 +671,7 @@
                            </tr>
                            <tr>
                             <td></td>
-                            <td colspan=2>Concurrent Sessions</td>
+                            <td class="concurrentSession" colspan=2>Concurrent Sessions</td>
                            </tr>
                            <tr>
                             <td></td>
@@ -713,8 +717,9 @@
                                 <th colspan="3" class="text-warning">Day 5 - Friday May 28<sup>th</sup> 2021</th>
                             </thead>
                            <tr>
-                            <td width="15%" class="subhead timezone"><strong>Etc/UTC</strong></td>
-                            <td colspan="2" class="subhead">Content</td>
+                            <td class="subhead timezone"><strong>Etc/UTC</strong></td>
+                            <td class="subhead">Content</td>
+                            <td></td>
                            </tr>
                            <tr>
                             <td><time datetimeTBD="2021-05-28T01:00:00Z">TBD</time></td>
@@ -801,11 +806,14 @@
                 console.log($( this ).val());
                 var tze = $( this ).val();
                 $( "time" ).each(function( index ) {
-                    console.log($(this).attr('datetime'));
-                    var tzt = moment($(this).attr('datetime'));
-                    var strout = tzt.tz(tze).format('HH:mm');
-                    console.log(strout);
-                    $(this).html(strout);
+                    var dt = $(this).attr('datetime')
+                    console.log(dt);
+                    if(dt) {
+                        var tzt = moment(dt);
+                        var strout = tzt.tz(tze).format('HH:mm');
+                        console.log(strout);
+                        $(this).html(strout);                        
+                    }
                 });
                 $( "td.timezone" ).each(function( index ) {
                     $(this).html(tze);
@@ -817,11 +825,14 @@
                     console.log($( this ).val());
                     var tze = $( this ).val();
                     $( "time" ).each(function( index ) {
-                        console.log($(this).attr('datetime'));
-                        var tzt = moment($(this).attr('datetime'));
-                        var strout = tzt.tz(tze).format('HH:mm');
-                        console.log(strout);
-                        $(this).html(strout);
+                        var dt = $(this).attr('datetime')
+                        console.log(dt);
+                        if(dt) {
+                            var tzt = moment(dt);
+                            var strout = tzt.tz(tze).format('HH:mm');
+                            console.log(strout);
+                            $(this).html(strout);                        
+                        }
                     });
                     $( "td.timezone" ).each(function( index ) {
                         $(this).html(tze);

@@ -57,6 +57,7 @@ h1, h2, h3, h4 {font-family: 'Libre Baskerville', serif;}
 tbody tr td:first-child {
     text-align: center;
     vertical-align: middle;
+    width: 15%;
 }
 tbody tr td:nth-child(2) {
     width: 40%;
@@ -77,4 +78,7 @@ tr td time {
 }
 td .keynoteName {
     font-weight:700;
+}
+td.concurrentSession {
+    text-align: center;
 }
