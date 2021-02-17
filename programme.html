@@ -5,8 +5,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link href="//cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-        <link href="style/timezone-picker.css" rel="stylesheet">
 
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
         <link rel="stylesheet" href="//unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css"/>
@@ -15,9 +13,6 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-        <script src="timezone-picker.min.js"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
         <script src="//cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
         <script src="//unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script>
@@ -103,8 +98,22 @@
                 
                     <h4 class="mb-4">Provisional Programme</h4>
                     <div class="ml-3">
-                        <p>The planned schedule for May 2021. Pick a Timezone</p>
-                        <div class="timezones"></div>
+                        <p>The planned schedule for May 2021.
+
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+  <label class="btn btn-outline-primary" for="btnradio1">BST</label>
+
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio2">CET</label>
+
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio2">AST</label>
+
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio3">IST</label>
+</div>
+                        </p>
                         <h5>All sessions on Zoom</h5>
                         <table class="table table-dark table-striped table-sm mb-3">
                             <thead>
@@ -300,105 +309,303 @@
                            </tr>
                            </table>
 
+                           <table class="table table-dark table-striped table-sm mb-3">
+                            <thead>
+                                <th colspan="3" class="text-warning">Day 3 - Wednesday May 26<sup>th</sup> 2021</th>
+                            </thead>
+                           <tr>
+                            <td><strong>UTC Time</strong></td>
+                            <td colspan="2"><strong>Session</strong></td>
+                           </tr>
+                          
+                           <tr>
+                            <td><time datetime="2021-05-26T10:00:00Z">10:00 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Responses to abiotic constraints</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T10:00:00Z">10:00 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Keynote: Christa Testerink (Wageningen University &amp;Research, Netherlands)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T10:40:00Z">10:40 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Selected talk: TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T11:00:00Z">11:00 26<sup>th</sup> May</time></td>
+                            <td></td>
+                            <td colspan=2>Selected talk: TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T11:20:00Z">11:20 26<sup>th</sup> May</time></td>
+                            <td></td>
+                            <td colspan=2>Selected talk: TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T11:40:00Z">11:40 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T12:10:00Z">12:10 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Poster Session 1</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T13:30:00Z">13:30 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td colspan=2>Concurrent Sessions</td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td>Modelling of root and rhizosphere processes</td>
+                            <td>Technologies to image root functions</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T15:30:00Z">15:30 26<sup>th</sup> May</time></td>
+                            <td>Keynote: Andrea Schnepf (Forschungszentrum Jülich, Germany)</td>
+                            <td>Keynote: Steven Siciliano (University of Saskatchewan, Canada)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T16:10:00Z">16:10 26<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T16:30:00Z">16:30 26<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T16:50:00Z">16:50 26<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T17:10:00Z">17:10 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T17:30:00Z">17:30 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Plenary<br>Xavier Draye (UCLouvain, Belgium)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T18:15:00Z">18:15 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Plenary<br>Ross Sozzani (North Carolina State University, US)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T19:00:00Z">19:00 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Poster Session 2</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-26T20:30:00Z">20:30 26<sup>th</sup> May</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td colspan=2>Concurrent Sessions</td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td>Root-microbe interactions</td>
+                            <td>Root &amp; root system development</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T01:00:00Z">01:00 27<sup>th</sup> May</time></td>
+                            <td>Keynote: Yang Bai (Institute of Genetics and Developmental Biology, Chinese Academy of Sciences, China)</td>
+                            <td>Keynote: Phanchita Vejchasarn (Ubon Ratchathani Rice Research Center, Thailand)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T01:40:00Z">01:40 27<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T02:00:00Z">02:00 27<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T02:20:00Z">02:20 27<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T02:45:00Z">02:45 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Plenary<br>Yusuka Uga (Institute of Crop Science, National Agriculture and Food Research Institution, Japan)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T03:30:00Z">03:30 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Poster Session 3</td>
+                           </tr>
+                        </table>
 
+                        <table class="table table-dark table-striped table-sm mb-3">
+                            <thead>
+                                <th colspan="3" class="text-warning">Day 4 - Thursday May 27<sup>th</sup>, 2021</th>
+                            </thead>
+                           <tr>
+                            <td><strong>UTC Time</strong></td>
+                            <td colspan="2"><strong>Session</strong></td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td colspan=2>Root biotic interactions</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T10:00:00Z">10:00 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Keynote: Gabriel Castrillo (University of Nottingham, UK)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T10:40:00Z">10:40 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Selected talk: TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T11:00:00Z">11:00 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Selected talk: TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T11:20:00Z">11:20 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Selected talk: TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T11:40:00Z">11:40 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T12:10:00Z">12:10 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Poster Session 1</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T13:30:00Z">13:30 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T14:00:00Z">14:00 27<sup>th</sup> May</time></td>
+                            <td colspan=2>ISRR General Membership Meeting</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T15:00:00Z">15:00 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td colspan=2>Concurrent Sessions</td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td>Grafted root systems and intra-plant communication</td>
+                            <td>Root-soil interface</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T15:30:00Z">15:30 27<sup>th</sup> May</time></td>
+                            <td>Keynote: Charles Melnyk (Swedish University of Agricultural Sciences, Sweden)</td>
+                            <td>Keynote: Colleen Iversen (Oak Ridge National Lab., US)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T16:10:00Z">16:10 27<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T16:30:00Z">16:30 27<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T16:50:00Z">16:50 27<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T17:10:00Z">17:10 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T17:30:00Z">17:30 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Plenary<br>Caroline Gutjahr (LMU Munich, Germany)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T18:15:00Z">18:15 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Plenary<br>Malcolm Bennett (University of Nottingham, UK)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T19:00:00Z">19:00 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Poster Session 2</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-27T20:30:00Z">20:30 27<sup>th</sup> May</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td colspan=2>Concurrent Sessions</td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td>Underground communication</td>
+                            <td>Root phenotyping approaches spanning lab to field</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-28T01:00:00Z">01:00 28<sup>th</sup> May</time></td>
+                            <td>Keynote: Ulrike Mathesius (Australian National University, Australia)</td>
+                            <td>Keynote: Chris Topp (Donald Danforth Plant Science Center, US)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-28T01:40:00Z">01:40 28<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-28T02:00:00Z">02:00 28<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-28T02:20:00Z">02:20 28<sup>th</sup> May</time></td>
+                            <td>Selected Talk - TBD</td>
+                            <td>Selected Talk - TBD</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-28T02:45:00Z">02:45 28<sup>th</sup> May</time></td>
+                            <td colspan=2>Plenary<br>Steve Tyerman (University of Adelaide, Australia)</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-28T03:30:00Z">03:30 28<sup>th</sup> May</time></td>
+                            <td colspan=2>Poster Session 3</td>
+                           </tr>
+                        </table>
 
+                        <table class="table table-dark table-striped table-sm mb-3">
+                            <thead>
+                                <th colspan="3" class="text-warning">Day 5 - Friday May 28<sup>th</sup> 2021</th>
+                            </thead>
+                           <tr>
+                            <td><strong>UTC Time</strong></td>
+                            <td colspan="2"><strong>Session</strong></td>
+                           </tr>
+                           <tr>
+                            <td><time datetimeTBD="2021-05-28T01:00:00Z">TBD</time></td>
+                            <td colspan=2>Root phenotyping workshop</td>
+                           </tr>
+                           <tr>
+                            <td><time datetimeTBD="2021-05-28T01:00:00Z">TBD</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-28T14:00:00Z">14:00 28<sup>th</sup> May</time></td>
+                            <td colspan=2>Poster &amp; Speaker Awards / Joint MeetingClosing</td>
+                           </tr>
+                           <tr>
+                            <td><time datetime="2021-05-28T15:00:00Z">15:00 28<sup>th</sup> May</time></td>
+                            <td colspan=2>Break</td>
+                           </tr>
+                           <tr>
+                            <td><time datetimeTBD="2021-05-28T01:00:00Z">TBD</time></td>
+                            <td colspan=2>Root phenotyping workshop</td>
+                           </tr>
+                          </table>
 
-                        <table class="table table-dark table-striped table-sm mb-3">
-                            <thead>
-                                <th colspan="2" class="text-warning">Day 1</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td width="25%">11:00am - 1:00pm</td>
-                                    <td width="75%">Registration</td>
-                                </tr>
-                                <tr>
-                                    <td>1:00pm</td>
-                                    <td>Welcome</td>
-                                </tr>
-                                <tr>
-                                    <td>1:10pm</td>
-                                    <td><strong>Trends in Plant Science Plenary Seminar:</strong> Xavier Draye (UC Louvain)</td>
-                                </tr>
-                                <tr>
-                                    <td>2:00pm</td>
-                                    <td>Session 1: Hormones and root system architecture<br><strong>Frontiers in Plant Science Keynote Seminar:</strong> Karin Ljung (SLU Umea)</td>
-                                </tr>
-                                <tr>
-                                    <td>6:00pm</td>
-                                    <td>Welcome reception and bar-b-que</td>
-                                </tr>
-                            
-                            </tbody>                        
-                        </table>
-                        
-                        <table class="table table-dark table-striped table-sm mb-3">
-                            <thead>
-                                <th colspan="2" class="text-warning">Day 2</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td width="25%">9:00am - 1:00pm</td>
-                                    <td width="75%">Session 2. Root morphogenesis<br><strong>EMBO Young Investigator Keynote Seminar:</strong> Bert de Rybel (VIB Ghent)</td>
-                                </tr>
-                                <tr>
-                                    <td>2:00pm - 6:00pm</td>
-                                    <td>Session 3. Nutrient and water uptake<br><strong>Keynote seminar:</strong> Anna Amtmann (Glasgow)</td>
-                                </tr>
-                            </tbody>                        
-                        </table>
-                        
-                        <table class="table table-dark table-striped table-sm mb-3">
-                            <thead>
-                                <th colspan="2" class="text-warning">Day 3</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td width="25%">9:00am - 1:00pm</td>
-                                    <td width="75%">Session 4. Responses to abiotic constraints<br><strong>Physiologica Plantarum Keynote Seminar</td>
-                                </tr>
-                                <tr>
-                                    <td>2:00pm - 6:00pm</td>
-                                    <td>Free Afternoon to explore Nottingham</td>
-                                </tr>
-                            </tbody>                        
-                        </table>
-                        
-                        <table class="table table-dark table-striped table-sm mb-3">
-                            <thead>
-                                <th colspan="2" class="text-warning">Day 4</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td width="25%">9:00am - 1:00pm</td>
-                                    <td width="75%">Session 5. Root biotic interactions<br><strong>The Plant Journal Keynote Seminar:</strong> Caroline Gutjahr (TUM, Munich)</td>
-                                </tr>
-                                <tr>
-                                    <td>2:00pm - 6:00pm</td>
-                                    <td>Session 6. Grafting / re-generation<br><strong>Frontiers in Plant Science Keynote Seminar:</strong> Charles Melnyk (SLU Uppsala)</td>
-                                </tr>
-                                <tr>
-                                    <td>7:00pm</td>
-                                    <td>Conference Reception and Dinner (Albert Hall, City Centre, Nottingham)</td>
-                                </tr>
-                            </tbody>                        
-                        </table>
-                        
-                        <p>&nbsp;</p>
-                        <h5>Sutton Bonington Campus</h5>
-                        
-                        <table class="table table-dark table-striped table-sm mb-3">
-                            <thead>
-                                <th colspan="2" class="text-warning">Day 5</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td width="25%">9:00am - 1:00pm</td>
-                                    <td width="75%">Session 7. Root Phenomics  - ‘Hands on’ demonstrations</td>
-                                </tr>
-                                
-                            </tbody>                        
-                        </table>
                         <p>&nbsp;</p>
                         
                     </div>
@@ -446,28 +653,7 @@
         </div>
         
         <script>
-            //$('.countrypicker').countrypicker();
-            $(".testclick" ).on("click", function( event ) {
-                console.log(event);
-                $( "time" ).each(function( index ) {
-                    console.log( index + ": " + $( this ).attr("datetime") );
-                    var tzt = moment($( this ).attr("datetime") );
-                    //moment().format("MMM Do YY");
-                    //$( this ).text(tzt);
-                });
-            });
 
-            
-            $('.timezones').timezonePicker();
-            $('.timezones').on("map:country:clicked", function(){
-                console.log($('.timezones').data('timezonePicker').getValue());
-            });
-            $('.timezones').on("map:quickLink:clicked" , function(){
-                console.log($('.timezones').data('timezonePicker').getValue());
-            });
-            $('.timezones').on("map:option:changed" , function(){
-                console.log($('.timezones').data('timezonePicker').getValue());
-            });
         </script>
     </body>
 </html>
