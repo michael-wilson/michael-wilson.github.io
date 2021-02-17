@@ -84,19 +84,18 @@
                     <div class="ml-3">
                         <p>The planned schedule for May 2021.</p>
                         <h5>All sessions on Zoom</h5>
-                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                            <label class="btn btn-outline-primary" for="btnradio1">BST</label>
-                          
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio2">CET</label>
-                          
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio3">AST</label>
-                          
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio4">IST</label>
-                        </div>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                              <input type="radio" name="options" id="option1" checked> Active
+                            </label>
+                            <label class="btn btn-secondary">
+                              <input type="radio" name="options" id="option2"> Radio
+                            </label>
+                            <label class="btn btn-secondary">
+                              <input type="radio" name="options" id="option3"> Radio
+                            </label>
+                          </div>
+
                         <table class="table table-dark table-striped table-sm mb-3">
                             <thead>
                                 <th colspan="3" class="text-warning">Day 1 - Monday May 24<sup>th</sup> 2021</th>
