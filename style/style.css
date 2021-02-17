@@ -67,8 +67,9 @@ tbody tr td:nth-child(3) {
     width: 40%;
     padding-left: 10px;
 }
-td.subhead {
+tbody tr td.subhead {
     font-weight: 700;
+    border-left: none;
 }
 tr td {
     font-weight: 300;
