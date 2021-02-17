@@ -82,3 +82,6 @@ td .keynoteName {
 td.concurrentSession {
     text-align: center;
 }
+td.sessionHead {
+    font-weight:700;
+}
