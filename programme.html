@@ -89,16 +89,16 @@
                         <p>The planned schedule for May 2021. Times are quoted in UTC. For your convenience you can select a representative time-zone button or select from the list.
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-secondary active">
-                              <input type="radio" name="options" id="option1" value="BST"> BST
+                              <input type="radio" name="options" id="option1" value="Europe/London"> BST
                             </label>
                             <label class="btn btn-secondary">
-                              <input type="radio" name="options" id="option2" value="CET"> CET
+                              <input type="radio" name="options" id="option2" value="Europe/Paris"> CET
                             </label>
                             <label class="btn btn-secondary">
                               <input type="radio" name="options" id="option3" value="AST"> AST
                             </label>
                             <label class="btn btn-secondary">
-                              <input type="radio" name="options" id="option4" value="IST"> IST
+                              <input type="radio" name="options" id="option4" value="Asia/Kolkata"> IST
                             </label>
                           </div>
                           <select class="selectpicker">
@@ -798,9 +798,16 @@
             });
             
             $( "select" ).change(function () {
-                var str = "";
                 $( "select option:selected" ).each(function() {
                     console.log($( this ).val());
+                    var tze = $( this ).val();
+                    $( "time" ).each(function( index ) {
+                        console.log($(this).attr('datetime'));
+                        var tzt = moment($(this).attr('datetime'));
+                        var strout = tzt.tz(tze).format('HH:mm [&mdash;] do MMM');
+                        console.log(strout);
+                        $(this).html(strout.replace('th','<sup>th</sup>'));
+                    });
                 });
             });
         </script>
