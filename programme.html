@@ -47,7 +47,7 @@
                     <h1 class="text-warning">Rooting 2021</h1>
                     <h3 class="mb-4">9th International Symposium on Root Development</h3>
                     <p class="lead"><em>University of Nottingham</em></p>
-                    <p class="mt-n3"><strong>24<sup>th</sup> to 2021</strong></p>
+                    <p class="mt-n3"><strong>24<sup>th</sup> to 28<sup>th</sup> 2021</strong></p>
                 </div>
             </div>
                         
@@ -88,6 +88,9 @@
 
                         <p>The planned schedule for May 2021. Times are quoted in UTC. For your convenience you can select a representative time-zone button or select from the list.
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="options" id="option0" value="Etc/UTC"> UTC
+                            </label>
                             <label class="btn btn-secondary active">
                               <input type="radio" name="options" id="option1" value="Europe/London"> BST
                             </label>
@@ -241,7 +244,7 @@
                                 <th colspan="3" class="text-warning">Day 1 - Monday May 24<sup>th</sup> 2021</th>
                             </thead>
                            <tr>
-                            <td width=200><strong>UTC Time</strong></td>
+                            <td width=150 class="timezone"><strong>UTC Time</strong></td>
                             <td colspan="2"><strong>Session</strong></td>
                            </tr>
                            <tr>
@@ -303,7 +306,7 @@
                                 <th colspan="3" class="text-warning">Day 2 - Tuesday May 25<sup>th</sup> 2021</th>
                             </thead>
                            <tr>
-                            <td width=200><strong>UTC Time</strong></td>
+                            <td width=150 class="timezone"><strong>UTC Time</strong></td>
                             <td colspan="2"><strong>Session</strong></td>
                            </tr>
                            <tr>
@@ -435,7 +438,7 @@
                                 <th colspan="3" class="text-warning">Day 3 - Wednesday May 26<sup>th</sup> 2021</th>
                             </thead>
                            <tr>
-                            <td width=200><strong>UTC Time</strong></td>
+                            <td width=150 class="timezone"><strong>UTC Time</strong></td>
                             <td colspan="2"><strong>Session</strong></td>
                            </tr>
                            <tr>
@@ -569,7 +572,7 @@
                                 <th colspan="3" class="text-warning">Day 4 - Thursday May 27<sup>th</sup> 2021</th>
                             </thead>
                            <tr>
-                            <td width=200><strong>UTC Time</strong></td>
+                            <td width=150 class="timezone"><strong>UTC Time</strong></td>
                             <td colspan="2"><strong>Session</strong></td>
                            </tr>
                            <tr>
@@ -709,7 +712,7 @@
                                 <th colspan="3" class="text-warning">Day 5 - Friday May 28<sup>th</sup> 2021</th>
                             </thead>
                            <tr>
-                            <td width=200><strong>UTC Time</strong></td>
+                            <td width=150 class="timezone"><strong>UTC Time</strong></td>
                             <td colspan="2"><strong>Session</strong></td>
                            </tr>
                            <tr>
@@ -794,7 +797,18 @@
 
         <script>
             $( 'input[name=options]').change(function() {
-                console.log( $( this ).val() );
+                console.log($( this ).val());
+                var tze = $( this ).val();
+                $( "time" ).each(function( index ) {
+                    console.log($(this).attr('datetime'));
+                    var tzt = moment($(this).attr('datetime'));
+                    var strout = tzt.tz(tze).format('HH:mm');
+                    console.log(strout);
+                    $(this).html(strout);
+                });
+                $( "td.timezone" ).each(function( index ) {
+                    $(this).html(tze);
+                });
             });
             
             $( "select" ).change(function () {
@@ -807,6 +821,9 @@
                         var strout = tzt.tz(tze).format('HH:mm');
                         console.log(strout);
                         $(this).html(strout);
+                    });
+                    $( "td.timezone" ).each(function( index ) {
+                        $(this).html(tze);
                     });
                 });
             });
