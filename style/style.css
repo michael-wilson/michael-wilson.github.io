@@ -53,3 +53,16 @@ h1, h2, h3, h4 {font-family: 'Libre Baskerville', serif;}
 .card-footer a img {
     margin:0 5px;
 }
+
+tbody tr td:first-child {
+    text-align: center;
+    vertical-align: middle;
+}
+tbody tr td:nth-child(2) {
+    width: 40%;
+}
+tbody tr td:nth-child(3) {
+    border-left: 1px rgba(128,128,128,0.25) solid;
+    width: 40%;
+    padding-left: 10px;
+}
