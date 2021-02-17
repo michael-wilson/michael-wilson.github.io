@@ -5,8 +5,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="//unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css"/>
+        
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -87,15 +89,150 @@
                         <p>The planned schedule for May 2021.
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-secondary active">
-                              <input type="radio" name="options" id="option1" checked> Active
+                              <input type="radio" name="options" id="option1" > BST
                             </label>
                             <label class="btn btn-secondary">
-                              <input type="radio" name="options" id="option2"> Radio
+                              <input type="radio" name="options" id="option2"> CET
                             </label>
                             <label class="btn btn-secondary">
-                              <input type="radio" name="options" id="option3"> Radio
+                              <input type="radio" name="options" id="option3"> AST
+                            </label>
+                            <label class="btn btn-secondary">
+                              <input type="radio" name="options" id="option4"> IST
                             </label>
                           </div>
+                          <select class="selectpicker">
+                            <option>Africa/Abidjan &mdash; GMT</option>
+                            <option>Africa/Algiers &mdash; CET</option>
+                            <option>Africa/Cairo &mdash; EET</option>
+                            <option>Africa/Casablanca &mdash; +00 +01</option>
+                            <option>Africa/Johannesburg &mdash; SAST</option>
+                            <option>Africa/Juba &mdash; EAT CAT</option>
+                            <option>Africa/Khartoum &mdash; EAT CAT</option>
+                            <option>Africa/Lagos &mdash; WAT</option>
+                            <option>Africa/Maputo &mdash; CAT</option>
+                            <option>Africa/Nairobi &mdash; EAT</option>
+                            <option>Africa/Sao_Tome &mdash; GMT WAT</option>
+                            <option>Africa/Windhoek &mdash; CAT WAT</option>
+                            <option>America/Adak &mdash; HST HDT</option>
+                            <option>America/Anchorage &mdash; AKST AKDT</option>
+                            <option>America/Asuncion &mdash; -03 -04</option>
+                            <option>America/Campo_Grande &mdash; -03 -04</option>
+                            <option>America/Caracas &mdash; -0430 -04</option>
+                            <option>America/Chicago &mdash; CST CDT</option>
+                            <option>America/Chihuahua &mdash; MST MDT</option>
+                            <option>America/Denver &mdash; MST MDT</option>
+                            <option>America/Fortaleza &mdash; -03</option>
+                            <option>America/Godthab &mdash; -03 -02</option>
+                            <option>America/Grand_Turk &mdash; AST EDT EST</option>
+                            <option>America/Halifax &mdash; AST ADT</option>
+                            <option>America/Havana &mdash; CST CDT</option>
+                            <option>America/La_Paz &mdash; -04</option>
+                            <option>America/Lima &mdash; -05</option>
+                            <option>America/Los_Angeles &mdash; PST PDT</option>
+                            <option>America/Managua &mdash; CST</option>
+                            <option>America/Metlakatla &mdash; AKST AKDT PST</option>
+                            <option>America/Mexico_City &mdash; CST CDT</option>
+                            <option>America/Miquelon &mdash; -03 -02</option>
+                            <option>America/New_York &mdash; EST EDT</option>
+                            <option>America/Noronha &mdash; -02</option>
+                            <option>America/Panama &mdash; EST</option>
+                            <option>America/Phoenix &mdash; MST</option>
+                            <option>America/Port-au-Prince &mdash; EST EDT</option>
+                            <option>America/Santiago &mdash; -03 -04</option>
+                            <option>America/Santo_Domingo &mdash; AST</option>
+                            <option>America/Sao_Paulo &mdash; -02 -03</option>
+                            <option>America/St_Johns &mdash; NST NDT</option>
+                            <option>America/Whitehorse &mdash; PST PDT MST</option>
+                            <option>Antarctica/Casey &mdash; +08 +11</option>
+                            <option>Antarctica/Palmer &mdash; -03 -04</option>
+                            <option>Antarctica/Troll &mdash; +00 +02</option>
+                            <option>Asia/Amman &mdash; EET EEST</option>
+                            <option>Asia/Baghdad &mdash; +03</option>
+                            <option>Asia/Bangkok &mdash; +07</option>
+                            <option>Asia/Barnaul &mdash; +06 +07</option>
+                            <option>Asia/Beirut &mdash; EET EEST</option>
+                            <option>Asia/Chita &mdash; +08 +09</option>
+                            <option>Asia/Colombo &mdash; +0530</option>
+                            <option>Asia/Damascus &mdash; EET EEST</option>
+                            <option>Asia/Dhaka &mdash; +06</option>
+                            <option>Asia/Dubai &mdash; +04</option>
+                            <option>Asia/Famagusta &mdash; EET EEST +03</option>
+                            <option>Asia/Gaza &mdash; EET EEST</option>
+                            <option>Asia/Hong_Kong &mdash; HKT</option>
+                            <option>Asia/Hovd &mdash; +07 +08</option>
+                            <option>Asia/Jakarta &mdash; WIB</option>
+                            <option>Asia/Jayapura &mdash; WIT</option>
+                            <option>Asia/Jerusalem &mdash; IST IDT</option>
+                            <option>Asia/Kabul &mdash; +0430</option>
+                            <option>Asia/Kamchatka &mdash; +12</option>
+                            <option>Asia/Karachi &mdash; PKT</option>
+                            <option>Asia/Kathmandu &mdash; +0545</option>
+                            <option>Asia/Kolkata &mdash; IST</option>
+                            <option>Asia/Kuala_Lumpur &mdash; +08</option>
+                            <option>Asia/Magadan &mdash; +10 +11</option>
+                            <option>Asia/Makassar &mdash; WITA</option>
+                            <option>Asia/Manila &mdash; PST</option>
+                            <option>Asia/Novosibirsk &mdash; +06 +07</option>
+                            <option>Asia/Pyongyang &mdash; KST KST</option>
+                            <option>Asia/Qyzylorda &mdash; +06 +05</option>
+                            <option>Asia/Rangoon &mdash; +0630</option>
+                            <option>Asia/Sakhalin &mdash; +10 +11</option>
+                            <option>Asia/Seoul &mdash; KST</option>
+                            <option>Asia/Shanghai &mdash; CST</option>
+                            <option>Asia/Tashkent &mdash; +05</option>
+                            <option>Asia/Tehran &mdash; +0330 +0430</option>
+                            <option>Asia/Tokyo &mdash; JST</option>
+                            <option>Asia/Tomsk &mdash; +06 +07</option>
+                            <option>Asia/Ulaanbaatar &mdash; +08 +09</option>
+                            <option>Asia/Vladivostok &mdash; +10</option>
+                            <option>Asia/Yakutsk &mdash; +09</option>
+                            <option>Atlantic/Azores &mdash; -01 +00</option>
+                            <option>Atlantic/Cape_Verde &mdash; -01</option>
+                            <option>Australia/Adelaide &mdash; ACDT ACST</option>
+                            <option>Australia/Brisbane &mdash; AEST</option>
+                            <option>Australia/Darwin &mdash; ACST</option>
+                            <option>Australia/Eucla &mdash; +0845</option>
+                            <option>Australia/Lord_Howe &mdash; +11 +1030</option>
+                            <option>Australia/Perth &mdash; AWST</option>
+                            <option>Australia/Sydney &mdash; AEDT AEST</option>
+                            <option>Etc/GMT+12 &mdash; -12</option>
+                            <option>Etc/GMT+7 &mdash; -07</option>
+                            <option>Etc/GMT-1 &mdash; +01</option>
+                            <option>Etc/GMT-2 &mdash; +02</option>
+                            <option>Etc/UTC &mdash; UTC</option>
+                            <option>Europe/Athens &mdash; EET EEST</option>
+                            <option>Europe/Chisinau &mdash; EET EEST</option>
+                            <option>Europe/Dublin &mdash; GMT IST</option>
+                            <option>Europe/Istanbul &mdash; EET EEST +03</option>
+                            <option>Europe/Lisbon &mdash; WET WEST</option>
+                            <option>Europe/London &mdash; GMT BST</option>
+                            <option>Europe/Moscow &mdash; MSK</option>
+                            <option>Europe/Paris &mdash; CET CEST</option>
+                            <option>Europe/Saratov &mdash; +03 +04</option>
+                            <option>Europe/Ulyanovsk &mdash; +03 +04</option>
+                            <option>Europe/Volgograd &mdash; +03 +04</option>
+                            <option>MET &mdash; MET MEST</option>
+                            <option>Pacific/Apia &mdash; +14 +13</option>
+                            <option>Pacific/Auckland &mdash; NZDT NZST</option>
+                            <option>Pacific/Bougainville &mdash; +11</option>
+                            <option>Pacific/Chatham &mdash; +1345 +1245</option>
+                            <option>Pacific/Easter &mdash; -05 -06</option>
+                            <option>Pacific/Fakaofo &mdash; +13</option>
+                            <option>Pacific/Fiji &mdash; +13 +12</option>
+                            <option>Pacific/Galapagos &mdash; -06</option>
+                            <option>Pacific/Gambier &mdash; -09</option>
+                            <option>Pacific/Guam &mdash; ChST</option>
+                            <option>Pacific/Honolulu &mdash; HST</option>
+                            <option>Pacific/Kiritimati &mdash; +14</option>
+                            <option>Pacific/Marquesas &mdash; -0930</option>
+                            <option>Pacific/Niue &mdash; -11</option>
+                            <option>Pacific/Norfolk &mdash; +11 +12</option>
+                            <option>Pacific/Pago_Pago &mdash; SST</option>
+                            <option>Pacific/Pitcairn &mdash; -08</option>
+                            <option>Pacific/Tahiti &mdash; -10</option>
+                            <option>Pacific/Tongatapu &mdash; +13 +14</option>
+                          </select>
                         </p>
                         <h5>All sessions on Zoom</h5>
 
@@ -646,7 +783,12 @@
 
         <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="//cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>        
-
+        <script src="//cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+        <script src="//unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script>        
+        <script src="//momentjs.com/downloads/moment.min.js"></script>
+        <script src="//momentjs.com/downloads/moment-timezone-with-data-10-year-range.min.js"></script>
+        
+        
 
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
