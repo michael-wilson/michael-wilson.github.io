@@ -91,7 +91,7 @@
                             <label class="btn btn-secondary active">
                                 <input type="radio" name="options" id="option0" value="Etc/UTC"> UTC
                             </label>
-                            <label class="btn btn-secondary active">
+                            <label class="btn btn-secondary">
                               <input type="radio" name="options" id="option1" value="Europe/London"> BST
                             </label>
                             <label class="btn btn-secondary">
@@ -829,6 +829,9 @@
                     });
                     $( "td.timezone" ).each(function( index ) {
                         $(this).html(tze);
+                    });
+                    $('label.active').each(function() {
+                        $(this).removeClass('active');
                     });
                 });
             });
