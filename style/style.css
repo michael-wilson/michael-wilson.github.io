@@ -78,11 +78,15 @@ tr td time {
     font-weight: 400;
 }
 td .keynoteName {
-    font-weight:700;
+    font-weight: 700;
 }
 td.concurrentSession {
     text-align: center;
 }
 td.sessionHead {
-    font-weight:700;
+    font-weight: 700;
+}
+.keynoteSponsor {
+    font-weight: 400;
+    color: #ffc107;
 }
