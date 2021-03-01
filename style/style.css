@@ -90,3 +90,6 @@ td.sessionHead {
     font-weight: 400;
     color: #ffc107;
 }
+.frontSpeakerList li {
+    line-height: 2rem;
+}
