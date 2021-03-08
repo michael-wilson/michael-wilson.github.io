@@ -98,3 +98,6 @@ td.sessionHead {
     flex-direction: row;
     justify-content: space-between;
 }
+.logos.logos-bottom {
+    align-items: end;
+}
