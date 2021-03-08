@@ -93,3 +93,8 @@ td.sessionHead {
 .frontSpeakerList li {
     line-height: 2rem;
 }
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
