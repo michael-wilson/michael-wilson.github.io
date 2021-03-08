@@ -99,5 +99,5 @@ td.sessionHead {
     justify-content: space-between;
 }
 .logos.logos-bottom {
-    align-items: end;
+    justify-content: flex-end;
 }
