@@ -34,7 +34,7 @@
         </style>
         <script type="text/javascript">
             function jump(jsonData,hash) {
-                if jsonData.hasOwnProperty(hash){
+                if(jsonData.hasOwnProperty(hash)) {
                     location = jsonData[hash];
                 }
             }
