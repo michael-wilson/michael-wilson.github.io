@@ -40,7 +40,7 @@
                     console.log('unknownhash'+hash);
                 }
             }
-            var hash = location.hash;
+            var hash = location.hash.substring(1);
             if (hash) {
                 console.log(hash);                
 
@@ -51,7 +51,7 @@
                     }
                     return response.json()
                   })
-                  .then((data) => jump(data,'#'+hash))
+                  .then((data) => jump(data,hash))
                   .catch((error) => console.log(error))
             }
         </script>
