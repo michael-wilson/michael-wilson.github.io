@@ -36,6 +36,8 @@
             function jump(jsonData,hash) {
                 if(jsonData.hasOwnProperty(hash)) {
                     location = jsonData[hash];
+                } else {
+                    console.log('unknownhash'+hash);
                 }
             }
             var hash = location.hash;
@@ -49,7 +51,7 @@
                     }
                     return response.json()
                   })
-                  .then((data) => jump(data,hash))
+                  .then((data) => jump(data,'#'+hash))
                   .catch((error) => console.log(error))
             }
         </script>
