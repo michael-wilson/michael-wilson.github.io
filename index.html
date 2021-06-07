@@ -33,9 +33,25 @@
         <style type="text/css">
         </style>
         <script type="text/javascript">
-            var oldLocation = location.hash;
-            console.log(oldLocation);
-            //location = newLocation;
+            function jump(jsonData,hash) {
+                if jsonData.hasOwnProperty(hash){
+                    location = jsonData[hash];
+                }
+            }
+            var hash = location.hash;
+            if (hash) {
+                console.log(hash);                
+
+                fetch('urls.json')
+                  .then((response) => {
+                    if (!response.ok) {
+                      throw Error(response.statusText);
+                    }
+                    return response.json()
+                  })
+                  .then((data) => jump(data,hash))
+                  .catch((error) => console.log(error))
+            }
         </script>
     
     </head>
